@@ -7,7 +7,7 @@
   <div class="sidebar-item">
     <div class="sidebar-personal-info">
       <div class="sidebar-personal-info-section">
-        <a href="https://level120.github.io/">
+        <a href="https://level120.github.io">
           <img src="https://avatars2.githubusercontent.com/u/10791961?s=460&v=4" title="Profile" alt="Chenny" />
         </a>
       </div>
@@ -31,13 +31,11 @@
         {% if current_index != len %}|{% endif %}
         {% endfor %}
         </p>
-        <span>지속적으로 갱신 중 입니다.</span>
       </div>
       {% endif %}
     </div>
   </div>
 
-<!--사이드 시작-->
   <nav class="sidebar-nav">
     {% for nav in site.nav %}
       {% assign is_relative = nav[1][0] | slice: 0 %}
@@ -48,7 +46,6 @@
 
       {% assign sub_len = nav[1] | size | minus: 1 %}
 
-<!--     대분류 -->
       <span class="{% if sub_len > 0 %}foldable{% endif %}">
         <a class="sidebar-nav-item {% if page.url == nav[1][0] %}active{% endif %}" href="{{ url }}">
           {{ nav[0] }}
@@ -61,8 +58,6 @@
             {% if sub_is_relative == '/' %}
               {% assign sub_url = sub_nav[1] | prepend: site.baseurl %}
             {% endif %}
-             
-<!--             소분류 -->
               <a class="sidebar-nav-item sidebar-nav-item-sub {% if page.url == sub_nav[1] %}active{% endif %}" href="{{ sub_url }}">
                 {{ sub_nav[0] }}
               </a>
@@ -74,6 +69,14 @@
 
 <!--    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
   </nav>
+
+<!--
+  <div class="sidebar-item">
+    <p>
+    &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. This work is liscensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+    </p>
+  </div>
+-->
 
   <div class="sidebar-item">
     <p>

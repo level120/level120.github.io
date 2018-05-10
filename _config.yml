@@ -7,7 +7,7 @@ url: https://level120.github.io
 logo: '/public/logo.png'
 
 # Site configurations
-plugins:
+gems:
   - jekyll-paginate
 markdown: kramdown
 kramdown:
@@ -28,7 +28,7 @@ author:
   description: think9573(<strong>Chenny</strong>)
   #gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
-    linkedin:  https://www.linkedin.com/in/gusam-park-2b245b135/
+    linkedin:  https://www.linkedin.com/in/gusam-park-2b245b135
     github:    https://github.com/level120
     # facebook:  <hide>
     #twitter:   https://twitter.com/Li_Zhihao
@@ -60,10 +60,10 @@ category_page: '/blog/categories/'
 
 hero:
   image: /public/img/we_will_be_giants_by_yalestewart.jpg
-  caption: 메인 페이지를 없애는 방법..?</a>
+  caption: 메인 페이지를 없애는 방법...?
 
 # Puglins
 mathjax: true # whether support mathjax
-google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
+google_analytics_token: '' # leave blank if you don't want google analytics
 disqus_short_name: 'level120' # leave blank if you don't want disqus
 
