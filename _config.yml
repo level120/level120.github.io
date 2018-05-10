@@ -1,0 +1,69 @@
+# Site Info
+title: '프로그래머 지망생의 공부로그'
+tagline: '프로그래머 지망생의 공부로그'
+description: '프로그래머 지망생이 공부하면서 배운점을 기록하는 곳 입니다.'
+baseurl: ""
+url: https://level120.github.io
+logo: '/public/logo.png'
+
+# Site configurations
+plugins:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: GUSAM PARK
+  description: think9573(<strong>Chenny</strong>)
+  #gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  contact:
+    linkedin:  https://www.linkedin.com/in/gusam-park-2b245b135/
+    github:    https://github.com/level120
+    # facebook:  <hide>
+    #twitter:   https://twitter.com/Li_Zhihao
+    #weibo:     http://weibo.com/41173780
+    email:     mailto:tnara9573@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    #- { Categories: '/blog/categories/' }
+    - { 학교시험: '/blog/categories/#학교시험' }
+    - { 자격증: '/blog/categories/#자격증' }
+    - { Python: '/blog/categories/#python' }
+    - { Csharp: '/blog/categories/#csharp' }
+    - { Games: '/blog/categories/#games' }
+    - { 알고리즘 문제풀이: '/blog/categories/#algo' }
+    #- { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+  Github Project: 
+    - 'http://github.com/level120'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+hero:
+  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  caption: 메인 페이지를 없애는 방법..?</a>
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
+disqus_short_name: 'level120' # leave blank if you don't want disqus
+
