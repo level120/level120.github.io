@@ -2,7 +2,7 @@
 layout: post
 title: 게임 테스트
 published: True
-category: games
+category: Games
 tags: [game, soulworker, 소울워커]
 comments: true
 ---
