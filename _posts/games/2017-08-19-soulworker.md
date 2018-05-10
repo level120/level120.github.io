@@ -9,7 +9,7 @@ comments: true
 
 ## 아카식 레코드 시뮬레이터
 
-[!시뮬레이터 이미지](/asset/img/akashic1.png)
+![시뮬레이터 이미지](/asset/img/akashic1.png)
 
 게임 내 확률 공개 기념으로 아카식 시뮬레이터를 만들었습니다.
 최대한 인게임 모습과 비슷하게 만들었으며, 게임을 그만두지 않는 한 지속적으로 업데이트 합니다.
@@ -48,8 +48,8 @@ comments: true
 
 ---
 
-[!시뮬레이터 이미지](/asset/img/akashic0.png)
-[!시뮬레이터 이미지](/asset/img/akashic1.png)
-[!시뮬레이터 이미지](/asset/img/akashic2.png)
-[!시뮬레이터 이미지](/asset/img/akashic3.png)
-[!시뮬레이터 이미지](/asset/img/akashic4.png)
+![시뮬레이터 이미지](/asset/img/akashic0.png)
+![시뮬레이터 이미지](/asset/img/akashic1.png)
+![시뮬레이터 이미지](/asset/img/akashic2.png)
+![시뮬레이터 이미지](/asset/img/akashic3.png)
+![시뮬레이터 이미지](/asset/img/akashic4.png)
