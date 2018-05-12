@@ -31,30 +31,30 @@ comments: true
 
 ### 2. FCM 설정
 
-![Create Project Img](/asset/img/kotlin_noti/21.png)
+![Create Project Img](/asset/img/kotlin_noti/21.PNG)
 
 * 이전과 다른 페이지 입니다. [Google Cloud Console](https://console.cloud.google.com/)
 * 여기서 `프로젝트 ID`를 기억하세요.
 * 이후 좌측에 있는 `API 및 서비스`의 `대시보드`로 진입합니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/22.png)
+![Create Project Img](/asset/img/kotlin_noti/22.PNG)
 
 * 상단의 `API 및 서비스 사용 설정`을 누릅니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/23.png)
+![Create Project Img](/asset/img/kotlin_noti/23.PNG)
 
 * 검색창에 `firebase cloud messaging`으로 검색한 뒤 `Firebase Cloud Messaging API`라고 적힌 것으로 들어갑니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/24.png)
+![Create Project Img](/asset/img/kotlin_noti/24.PNG)
 
 * 만약 여기에 `API 사용 설정됨`이 안되어 있다면 `관리` 버튼이 `사용`으로 되어 있을 겁니다.
 * 그 버튼이 `사용 설정`으로 바꿔줍니다. `관리`인 분도 누르셔서 `대시보드` 진입까지 확인합니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/25.png)
+![Create Project Img](/asset/img/kotlin_noti/25.PNG)
 
 * `대시보드` 진입 확인
 
@@ -63,18 +63,18 @@ comments: true
 
 ### 3. Firebase Admin SDK 사용하기
 
-![Create Project Img](/asset/img/kotlin_noti/26.png)
+![Create Project Img](/asset/img/kotlin_noti/26.PNG)
 
 * `FCM Console`의 설정에서 `서비스 계정`으로 진입합니다.
 * `Firebase Admin SDK` 화면에서 해당 플랫폼 선택 후 `새 비공개 키 생성`을 눌러줍니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/27.png)
+![Create Project Img](/asset/img/kotlin_noti/27.PNG)
 
 * 키 생성한 자료는 안내문대로 공개 저장소에 놔두지 맙시다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/28.png)
+![Create Project Img](/asset/img/kotlin_noti/28.PNG)
 
 * 이제 서버를 만져야 합니다. 저는 테스트 겸이라 `Windows 10` 내에 있는 `Ubuntu`를 사용했습니다.
 * `apt-get install python-pip python-dev python python3-pip python3-dev python3`가 기본적으로 설치되어 있어야 합니다.
@@ -199,7 +199,7 @@ print 'Successfully sent message:', response
 
 ### 5. 결과 확인
 
-![Create Project Img](/asset/img/kotlin_noti/34.png)
+![Create Project Img](/asset/img/kotlin_noti/34.PNG)
 
 * 파일을 실행시켜 봅니다.
 * 위 사진은 `HTTP v1` 방식으로 전송한 모습이며, 실패 시 에러코드와 함께 에러내용이 나타납니다.

@@ -15,7 +15,7 @@ comments: true
 
 ### 1. 프로젝트 생성
 
-![Create Project Img](/asset/img/kotlin_noti/1.png)
+![Create Project Img](/asset/img/kotlin_noti/1.PNG)
 
 * `Application name`에 자신이 만드는 이름 설정합니다.
 * `Company domain` 가급적이면 `domain` 의미를 찾아봐서 설정할 것을 권장합니다. 또한 알림 서비스를 찾을 때 키워드로도 쓰입니다.
@@ -23,17 +23,17 @@ comments: true
 * `Include Kotlin support`를 반드시 체크해 줍니다(여기서는 `Kotlin` 문법을 다룹니다).
 
 
-![Create Project Img](/asset/img/kotlin_noti/2.png)
+![Create Project Img](/asset/img/kotlin_noti/2.PNG)
 
 * `Phone and Tablet`에서 만들어질 앱의 안드로이드 최소버전을 지정해 줍니다(호환성).
 
 
-![Create Project Img](/asset/img/kotlin_noti/3.png)
+![Create Project Img](/asset/img/kotlin_noti/3.PNG)
 
 * 여기서는 편하게 `Empty Activity`로 설정하였습니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/4.png)
+![Create Project Img](/asset/img/kotlin_noti/4.PNG)
 
 * 완료
 
@@ -46,7 +46,7 @@ comments: true
 처음부터 시작하려면 [Noverish's Blog](http://noverish.me/blog/Android-Kotlin-Firebase-Push-Notification)를 참고하기 바랍니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/5.png)
+![Create Project Img](/asset/img/kotlin_noti/5.PNG)
 
 * [Firebase Console](https://console.firebase.google.com)에서 프로젝트 선택 후 `설정`으로 진입합니다.
 * `google-services.json` 파일을 내려받습니다.
@@ -56,23 +56,23 @@ comments: true
 
 ### 3. Android에서 Firebase 설정
 
-![Create Project Img](/asset/img/kotlin_noti/6.png)
+![Create Project Img](/asset/img/kotlin_noti/6.PNG)
 
 * 다운받은 파일을 `(Project_Root)/app` 아래로 이동합니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/7.png)
+![Create Project Img](/asset/img/kotlin_noti/7.PNG)
 
 * 좌측 화면을 `Project`로 바꾼 다음 위 그림과 같이 `google-services.json`이 올바르게 들어왔는지 확인합니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/36.png)
+![Create Project Img](/asset/img/kotlin_noti/36.PNG)
 
 * 아래에 있는 `gradle/build.gradle`을 열어 `classpath`를 추가합니다.
 * 작성일 기준 최신버전은 `classpath 'com.google.gms:google-services:3.2.0'` 입니다.
 
 
-![Create Project Img](/asset/img/kotlin_noti/9.png)
+![Create Project Img](/asset/img/kotlin_noti/9.PNG)
 
 * 위쪽에 있는 `app/build.gradle`을 열어 `firebase-messaging`과 `apply` 구문을 추가합니다.
 * 작성일 기준 최신버전은 `implementation 'com.google.firebase:firebase-messaging:11.8.0'`, `apply plugin: 'com.google.gmc:google-services'` 입니다.
@@ -85,7 +85,7 @@ comments: true
 
 ### 4. Android에서 Firebase 용 코드 작성
 
-![Create Project Img](/asset/img/kotlin_noti/10.png)
+![Create Project Img](/asset/img/kotlin_noti/10.PNG)
 
 * `MainActivity`와 같은 위치에 코틀린용 파일을 새로 만듭니다(클래스 명 : `MyFirebaseInstanceIDService.kt`)
 * `To Do ...` 아래에 `token`이 발급 받은 후 `DB`로 발급받은 `token`을 전달하는 코드를 추가할 수 있습니다.
@@ -106,7 +106,7 @@ class MyFirebaseInstanceIDService : FirebaseInstanceIdService() {
 ```
 
 
-![Create Project Img](/asset/img/kotlin_noti/11.png)
+![Create Project Img](/asset/img/kotlin_noti/11.PNG)
 * `MainActivity`와 같은 위치에 코틀린용 파일을 새로 만듭니다(클래스 명 : `MyFirebaseMessagingService.kt`)
 * `Notification` 수신 시 `onMessageReceived()`로 실행하게 됩니다.
 * `sendNotification()`에서 알림 옵션을 자세하게 수정할 수 있습니다.
@@ -142,7 +142,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 ```
 
 
-![Create Project Img](/asset/img/kotlin_noti/12.png)
+![Create Project Img](/asset/img/kotlin_noti/12.PNG)
 
 * `AndroidManifest.xml`에서 다음 코드를 추가합니다.
 
@@ -166,7 +166,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
 ### 5. 선택사항과 실행
 
-![Create Project Img](/asset/img/kotlin_noti/35.png)
+![Create Project Img](/asset/img/kotlin_noti/35.PNG)
 
 * `MainActivity`에 아무것도 추가하지 않아도 동작합니다.
 * `FirebaseMessaging.getInstance().subscribeToTopic("TOPIC_NAME")`을 지정하면 `token`없이 `TOPIC_NAME`로 발송 된 메세지 수신이 가능합니다.
