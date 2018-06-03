@@ -20,6 +20,8 @@ comments: true
 
 * 리스트에서 앨범 이미지 표시 시 `Bitmap`에서 `Glide`로 변경
 
+코드는 [Github = Android_MusicPlayer](https://github.com/level120/Android_MusicPlayer)에서 확인할 수 있습니다.
+
 ---
 
 ### 동작환경
@@ -45,7 +47,7 @@ comments: true
 
 ### 구현과정
 
-
+보고서로 대체
 
 ---
 
