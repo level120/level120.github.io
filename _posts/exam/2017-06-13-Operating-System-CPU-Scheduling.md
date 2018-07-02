@@ -9,7 +9,7 @@ comments: true
 
 # [C# WPF] CPU 스케줄링
 
-2016년도 1학기 Android 교과목 과제
+2017년도 1학기 운영체제 교과목 과제
 
 ---
 
