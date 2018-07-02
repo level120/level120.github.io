@@ -75,13 +75,13 @@ comments: true
 
 | 화면모습 | 설명 |
 | :-------: | ---- |
-| ![Main View](/asset/img/cpu_opsys/1.PNG) | 좌측의 알고리즘 리스트, 상단의 프로세스 개수, 중앙의 결과 모습 |
+| ![Main View](/asset/img/cpu_opsys/1.PNG) | 좌측의 알고리즘 리스트,<br>상단의 프로세스 개수,<br>중앙의 결과 모습 |
 | ![Main View](/asset/img/cpu_opsys/2.PNG) | 좌측에서 알고리즘 선택 후 프로세스 생성하면 다음과 같은 모습이 등장 |
 | ![Main View](/asset/img/cpu_opsys/3.PNG) | FCFS 결과 모습 |
-| ![Main View](/asset/img/cpu_opsys/4.PNG) | FCFS 프로세스 정보 고정, SJF 모습 |
-| ![Main View](/asset/img/cpu_opsys/5.PNG) | FCFS 프로세스 정보 고정, SRT 모습 |
-| ![Main View](/asset/img/cpu_opsys/6.PNG) | FCFS 프로세스 정보 고정, HRN 모습 |
-| ![Main View](/asset/img/cpu_opsys/7.PNG) | FCFS 프로세스 정보 고정, 우선순위 모습(여기서만 우선순위 열 표시) |
-| ![Main View](/asset/img/cpu_opsys/8.PNG) | FCFS 프로세스 정보 고정, 라운드 로빈 모습 |
+| ![Main View](/asset/img/cpu_opsys/4.PNG) | FCFS 프로세스 정보 고정,<br>SJF 모습 |
+| ![Main View](/asset/img/cpu_opsys/5.PNG) | FCFS 프로세스 정보 고정,<br>SRT 모습 |
+| ![Main View](/asset/img/cpu_opsys/6.PNG) | FCFS 프로세스 정보 고정,<br>HRN 모습 |
+| ![Main View](/asset/img/cpu_opsys/7.PNG) | FCFS 프로세스 정보 고정,<br>우선순위 모습(여기서만 우선순위 열 표시) |
+| ![Main View](/asset/img/cpu_opsys/8.PNG) | FCFS 프로세스 정보 고정,<br>라운드 로빈 모습 |
 | ![Main View](/asset/img/cpu_opsys/9.PNG) | 결과가 나온 뒤 프로세스를 누르면 자세한 정보 제공 |
 | ![Main View](/asset/img/cpu_opsys/10.PNG) | 도움말 기능 포함 |
