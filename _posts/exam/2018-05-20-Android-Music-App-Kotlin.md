@@ -55,4 +55,4 @@ comments: true
 
 | 플레이리스트 | 재생화면 |
 | :-------: | :----: |
-| ![Playlist](/asset/1.png) | ![Playlist](/asset/2.png) |
+| ![Playlist](https://github.com/level120/Android_MusicPlayer/raw/master/asset/1.png) | ![Playlist](https://github.com/level120/Android_MusicPlayer/raw/master/asset/2.png) |
