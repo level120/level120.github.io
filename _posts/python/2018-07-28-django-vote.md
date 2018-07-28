@@ -177,8 +177,8 @@ urlpatterns = [
 만약 `model`에서 필수코드만 썻다면 아래 코드에서 다음 두 라인만 제외하면 된다.
 
 ```html
-<td style="vertical-align:middle; text-align:center"><span class = 'user-green'>{{ player.name }}</span></td>
-<td style="vertical-align:middle" class="click-this">{{ player.description }}</td>
+<td style="vertical-align:middle; text-align:center"><span class = 'user-green'>\{\{ player.name \}\}</span></td>
+<td style="vertical-align:middle" class="click-this">\{\{ player.description \}\}</td>
 ```
 
 ```html
@@ -194,22 +194,22 @@ urlpatterns = [
         </tr>
     </thead>
     <tbody>
-        {% for player in players %}
+        \{\% for player in players \%\}
         <tr>
-            <td style="vertical-align:middle; text-align:center">{{ player.id }}</td>
-            <td style="vertical-align:middle; text-align:center"><span class = 'user-green'>{{ player.name }}</span></td>
-            <td style="vertical-align:middle" class="click-this">{{ player.description }}</td>
+            <td style="vertical-align:middle; text-align:center">\{\{ player.id \}\}</td>
+            <td style="vertical-align:middle; text-align:center"><span class = 'user-green'>\{\{ player.name \}\}</span></td>
+            <td style="vertical-align:middle" class="click-this">\{\{ player.description \}\}</td>
             <td style="vertical-align:middle;width:35%">
                 <div class="progress progress-striped active" style="margin-bottom: 0px;">
-                    {% with percent=100 %}
-                    <div class="progress-bar pb{{ player.id }}" style="width: {{ player.total_likes|div:all_member|mul:percent }}%;"><span style="vertical-align:middle">{{ player.total_likes }} / {{ all_member }}</span></div>
+                    \{\% with percent=100 \%\}
+                    <div class="progress-bar pb{{ player.id }}" style="width: {{ player.total_likes|div:all_member|mul:percent }}%;"><span style="vertical-align:middle">\{\{ player.total_likes \}\} / \{\{ all_member \}\}</span></div>
                     {#<div class="progress-bar progress-bar-success" style="width: 100%;">1</div>#}
-                    {% endwith %}
+                    \{\% endwith \%\}
                 </div>
             </td>
             <td style="vertical-align:middle"><button type="button" id="{{ player.id }}" name="vote{{ player.id }}" class="like btn btn-success glyphicon glyphicon-thumbs-up"> 투표하기</button></td>
         </tr>
-        {% endfor %}
+        \{\% endfor \%\}
     </tbody>
 </table>
 ```
