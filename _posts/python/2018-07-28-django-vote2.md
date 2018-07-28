@@ -52,10 +52,10 @@ $(document).ready(function () {
         let pk = $(this).attr('id');
         $.ajax({
             type: "POST",
-            url: "{% url 'like_ready' %}",
+            url: "\{\% url 'like_ready' \%\}",
             data: {
                 'pk': pk,
-                'csrfmiddlewaretoken': '{{ csrf_token }}'
+                'csrfmiddlewaretoken': '\{\{ csrf_token \}\}'
             },
             dataType: "json",
             success: function(response) {
@@ -86,15 +86,15 @@ $('.like').click(function() {
     let pk = $(this).attr('id');
     $.ajax({
         type: "POST",
-        url: "{% url 'like' %}",
+        url: "\{\% url 'like' \%\}",
         data: {
             'pk': pk,
-            'csrfmiddlewaretoken': '{{ csrf_token }}'
+            'csrfmiddlewaretoken': '\{\{ csrf_token \}\}'
         },
         dataType: "json",
         success: function(response) {
-            $('.pb'+pk).css('width', (response.likes_count/{{ all_member }})*100+'%');
-            $('.pb'+pk+' span').text(response.likes_count+' / '+{{ all_member }});
+            $('.pb'+pk).css('width', (response.likes_count/\{\{ all_member \}\})*100+'%');
+            $('.pb'+pk+' span').text(response.likes_count+' / '+\{\{ all_member \}\});
             $('#'+pk).text(' ' + response.message).attr('class', (response.message!=="투표취소 ")?'like btn btn-success glyphicon glyphicon-thumbs-up':'like btn btn-danger glyphicon glyphicon-thumbs-down');
         },
         error: function(request, status, error) {
