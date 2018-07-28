@@ -81,7 +81,7 @@ $(document).ready(function () {
 
 ```js
 # VoteApp/vote.html
-{% if user.is_authenticated %}
+\{\% if user.is_authenticated \%\}
 $('.like').click(function() {
     let pk = $(this).attr('id');
     $.ajax({
@@ -103,7 +103,7 @@ $('.like').click(function() {
     });
 })
 
-{% endif %}
+\{\% endif \%\}
 ```
 
 이로서 `ajax` 부분은 끝났다.
