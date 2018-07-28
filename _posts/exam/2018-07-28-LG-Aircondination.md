@@ -2,7 +2,7 @@
 layout: post
 title: 교내 LG 휘센 중앙제어 조작하기
 published: True
-category: Python
+category: 학교시험
 tags: [IP Scanning]
 comments: true
 ---
