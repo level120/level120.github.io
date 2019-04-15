@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 입문자가 VisualStudio에서 자주 범하는 실수
-published: True
-category: 학교시험
+published: false
+category: Univ.
 tags: [c, error]
 comments: true
 ---

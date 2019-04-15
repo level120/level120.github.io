@@ -1,0 +1,28 @@
+# https://imreplay.com/blogging/Travis-ci%EB%A5%BC-%ED%86%B5%ED%95%B4-%EB%B0%B0%ED%8F%AC%EC%9E%90%EB%8F%99%ED%99%94/
+
+language: ruby
+cache: bundler
+
+install:
+  # Install Jekyll and dependencies
+  - bundle install
+
+script:
+  - bundle exec rake site:deploy --quiet
+branches:
+  only:
+    # Change this to gh-pages if you're deploying using the gh-pages branch
+    - master
+
+rvm:
+  -2.5.3
+
+# Generate your secure token with the travis gem:
+# get Github token from your Travis CI profile page
+# gem install travis
+# GH_TOKEN from https://github.com/settings/tokens
+# travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
+
+env:
+  global:
+    secure: "KDWq4/ZBWQWO7KtqM8bYxKgDb0y6goMqzbW54o7M6g34yxOMXUC/SOVLAxciD4TU/8KwhhCR2BEmim+F851ZwYPBvPutSeVUEpduOIBFxXNLOV1CSQwoNXhHrodA0hBTLBCwU91dIWkpHbOhSYSLYm32/qEeewRADLbkftwMFxyN/v4aPPqszUxrYRmL00DG7BVnPJkHOIVxWVnjX1SH4QJHjgWKg091FuqrZ6bK8vIUPn4EIUltQCx3TaJvR/64xu+jnQoo/iYQPOC0hja9N5JY3vShCJDtpEszMJwYg54BLTncO/ObY7cBbyTTBSipvQ3OVW53zWhmgHb8u+7x6fhWN7Xu29YbYfhNu4RAJ4xrbiDmg2pAI6So2oRcBk456e7YW4lRxSGZmDZcfiXlg3bp8TdZs3B8mZwuz+UsO9U6LngcHytU4UhvE15X9vCr8IYdUhQ5sD/hbXSk+2vyuhHRtiec3Qg+YXkoy5YUO+ZnvD6VsSlqBGazwO1I5h0ONkaWbSiqNs8yfLE5yOtliWZj3Ob9G+Fg/zv2bcAJtv5TWC+kzJbzKUtTl1eN20As7jJoYA0+mvfGo1iDps6DJ4EwPNKFncapQYoC71PUGKr8Ee7BU5gFZMu9jDW7R1VmL5TJaUTLw2qKH769mxq2/HicZOrCgvhU3C+VutKFnBA="

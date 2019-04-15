@@ -1,8 +1,8 @@
 ---
 layout: post
 title: JavaScript 정보보안 S-DES
-published: True
-category: 학교시험
+published: true
+category: Univ.
 tags: [js, javascript, html, html5, sdes]
 comments: true
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: C# WPF CPU 스케줄링
-published: True
-category: 학교시험
+published: true
+category: Univ.
 tags: [c#, cs, csharp, wpf, cpu scheduling]
 comments: true
 ---

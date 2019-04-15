@@ -1,7 +1,7 @@
 # Site Info
-title: '프로그래머 지망생의 공부로그'
-tagline: '프로그래머 지망생의 공부로그'
-description: '프로그래머 지망생이 공부하면서 배운점을 기록하는 곳 입니다.'
+title: 'Level120의 저장공간'
+tagline: 'Level120의 저장공간'
+description: '공부하면서 배운점을 기록하는 곳 입니다.'
 baseurl: ""
 url: https://level120.github.io
 logo: '/public/logo.png'
@@ -28,7 +28,7 @@ author:
   description: think9573(<strong>Chenny</strong>)
   #gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
-    linkedin:  https://www.linkedin.com/in/gusam-park-2b245b135
+    #linkedin:  https://www.linkedin.com/in/gusam-park-2b245b135
     github:    https://github.com/level120
     # facebook:  <hide>
     #twitter:   https://twitter.com/Li_Zhihao
@@ -38,16 +38,16 @@ author:
 # Navigation (2nd level links supported)
 nav:
   Home:           
-    - '/blog/'
+    - '/blog/categories/'
   Blog:           
-    - '/blog/'
+    - '/blog/categories/'
     #- { Categories: '/blog/categories/' }
-    - { 학교시험: '/blog/categories/#학교시험' }
-    - { 자격증: '/blog/categories/#자격증' }
-    - { Python: '/blog/categories/#python' }
-    - { Csharp: '/blog/categories/#csharp' }
-    - { Games: '/blog/categories/#games' }
-    - { 알고리즘 문제풀이: '/blog/categories/#algo' }
+    #- { 학교시험: '/blog/categories/#학교시험' }
+    #- { 자격증: '/blog/categories/#자격증' }
+    - { Python: '/blog/categories/#Python' }
+    - { Csharp: '/blog/categories/#Csharp' }
+    - { Games: '/blog/categories/#Games' }
+    #- { 알고리즘 문제풀이: '/blog/categories/#algo' }
     #- { Tags: '/blog/tags/' }
   About:          
     - '/about/'
@@ -58,9 +58,9 @@ nav:
 tag_page: '/blog/tags/'
 category_page: '/blog/categories/'
 
-hero:
-  image: /public/img/we_will_be_giants_by_yalestewart.jpg
-  caption: 메인 페이지를 없애는 방법...?
+#hero:
+#  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+#  caption: 메인 페이지를 없애는 방법...?
 
 # Puglins
 mathjax: true # whether support mathjax

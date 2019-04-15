@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 안드로이드 뮤직 플레이어 - Kotlin
-published: True
-category: 학교시험
+published: true
+category: Univ.
 tags: [android, kotlin, music pleayer, music app]
 comments: true
 ---
