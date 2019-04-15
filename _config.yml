@@ -1,3 +1,5 @@
+exclude: [vendor]
+
 # Site Info
 title: 'Level120의 저장공간'
 tagline: 'Level120의 저장공간'
@@ -7,7 +9,7 @@ url: https://level120.github.io
 logo: '/public/logo.png'
 
 # Site configurations
-gems:
+plugins:
   - jekyll-paginate
 markdown: kramdown
 kramdown:
