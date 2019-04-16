@@ -106,4 +106,4 @@ build-iPhoneSimulator/
 
 # End of https://www.gitignore.io/api/ruby,jekyll
 
-.lock
+*.lock
